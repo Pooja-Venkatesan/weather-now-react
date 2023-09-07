@@ -1,0 +1,121 @@
+body{
+  background: linear-gradient(#132170, #678af2);
+  font-size: 18px;
+  background-color: #caddff;
+  background-repeat: no-repeat;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container{
+  position: relative;
+  top: 30px;
+}
+
+.tableRecord{
+  background-color: rgba(146, 177, 231, 0.682);
+  margin: 0 auto;
+  text-align: justify;
+  padding: 20px;
+  border:1px solid #282c34;
+}
+
+.tableRecord tr td{
+  padding: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+}
+
+.Card{
+  margin: 10px auto;
+  width: 49.5%;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+
+  background-color: rgb(6, 56, 74);
+}
+.Card input{
+  width: auto;
+  height: 30px;
+  font-size: 18px;
+}
+
+.BtnLight{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  background-color: #46cbff;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgb(91, 171, 245);
+}
+.DisplayCard{
+  background-color: darkseagreen;
+  text-align: left;
+
+}
+.closeBtn{
+  background-color: #4e699d;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1PX 2PX 3PX rgb(119, 112, 112);
+}
+
+nav{
+  position: static;
+  top: 0;
+  background-color: #194aa4;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 1px 2px 3px rgb(70, 129, 177);
+}
+
+nav h1{
+  text-align: left;
+  margin: 0 10px;
+}

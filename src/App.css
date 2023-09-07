@@ -1,38 +1,270 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* start */
+nav{
+    top: 0;
+    background-color: #194aa4;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 1px 2px 3px rgb(70, 129, 177);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  nav h1{
+    text-align: left;
+    margin: 0 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+.container{
+    /* width: 607px;
+    height: 829px; */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(to left top, #132170, #678af2);
   }
+  
+  .top-bar{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 60px;
+  }
+
+.top-bar input{
+    display: flex;
+    /* width: 362px;
+    height: 78px; */
+    background-color: rgb(255, 240, 221);
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding-left: 40px;
+    color: #403f3f;
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
 }
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 40px; */
+}
+
+.search-btn{
+    outline: none;
+    border: none;
+    width: 50px;
+    border-radius: 50px;
+    background-color: rgb(194, 219, 255);
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background-color: rgb(232, 255, 150);
+}
+
+
+.icon{
+    width: 70px;
+}
+
+.weather-image{
+    margin: 0 auto;
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+}
+.weather-image img{
+  background-color: white;
+  border-radius: 60px;
+}
+.weather-temp{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.weather-location{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    align-items: center;
+    gap: 12px;
+}
+
+.data-container{
+    display: flex;
+    color: white;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.element{
+    display: flex;
+    margin:10px auto;
+    align-items: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.data{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.data h3{  
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-left: 25px;
+}
+
+.humidity-percent, .wind-speed{
+  text-transform: lowercase;
+}
+  /* end */
+  .currentLocation-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+ }
+  .tableRecord{
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(146, 177, 231, 0.682);
+    /* margin: 20px auto; */
+    text-align: left;
+    padding: 20px;
+    border:1px solid #282c34;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: -2px 12px 6px 0px rgba(30, 53, 119, 0.746);
+  }
+.tableRecord h3{
+    font-size: 25px;
+}
+.tableRecord tbody tr{
+    display: flex;
+    margin: 10px;
+}
+  .tableRecord tbody tr td{
+    color: #0d053d;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: 10px;
+    width: 100px;
+  }
+  .minCard .element .data .text {
+  
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .minCard .element .data .humidity-percent {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .minCard{
+    color: #0d053d;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0 auto;
+    font-weight: 800;
+    text-align: justify;
+    /* font-size: 18px; */
+    /* margin-right: 10px; */
+    /* width: 100px; */
+  }
+ .location-map{
+    padding: 20px;
+    width: auto;
+    min-width: 30%;
+    height: auto;
+    border:1px solid #3153a4;
+    background-color: #3fa0c3ae;
+    border-radius: 20px;
+    color: wheat;
+    box-shadow: -2px 2px 3px 0px rgb(3, 47, 80);
+ }
+
+ .errorCard{
+    padding: 10px;
+    margin: 40px 0;
+    width: 40%;
+ }
+
+  /* .Card{
+    width: 49.5%;
+  } */
+
+  .DisplayCard{
+    margin: 10px auto;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(184, 207, 184);
+    text-align: left;
+    color: #4c3702;
+    padding: 15px;
+    background-color: rgb(214, 214, 242);
+  }
+
+  .closeBtn{
+    background-color: #4e699d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1PX 2PX 3PX rgb(119, 112, 112);
+    /* margin: 0 50%; */
+    justify-content: center;
+  }
+  .closeBtn:hover{
+    background-color: #194aa4;
+  }
+
+  .light-btn:hover{
+    background-color: #403f3f;
+  }
+  .BtnLight{
+    display: flex;
+    margin: 10px;
+    padding:10px;
+    background-color: #46cbff;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    box-shadow: -2px 3px 2px 0px rgb(30, 106, 177);
+    align-items: center;
+  }
+
+  .BtnLight:hover{
+    background-color: #1f637c;
+  }
+
+
+  
+  
